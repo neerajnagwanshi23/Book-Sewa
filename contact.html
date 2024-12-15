@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us - Book Sewa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold">Book Sewa</div>
+            <nav class="space-x-4">
+                <a class="hover:text-gray-400" href="Final.html">Home</a>
+                <a class="hover:text-gray-400" href="about.html">About</a>
+                <a class="hover:text-gray-400" href="services.html">Services</a>
+                <a class="hover:text-gray-400" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                    <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg" onsubmit="return showMessage()">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="name">Name</label>
+                            <input class="border border-gray-300 p-2 w-full rounded" type="text" id="name" name="name" required/>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input class="border border-gray-300 p-2 w-full rounded" type="email" id="email" name="email" required/>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea class="border border-gray-300 p-2 w-full rounded" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" type="submit">Send Message</button>
+                    
+                    </form>
+                    <script>
+                        function showMessage() {
+                            alert("Thank You for Contacting Us!");
+                            return false; // Prevents the form from submitting
+                        }
+                        </script>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Address: 123 Book St, Booktown, Indore</p>
+                    <p class="mb-2"><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p class="mb-2"><i class="fas fa-envelope"></i> Email: info@booksewa.com</p>
+                    <h3 class="text-xl font-bold mt-6 mb-4">Follow Us</h3>
+                    <div class="space-x-4">
+                        <a class="hover:text-gray-400" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="hover:text-gray-400" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="hover:text-gray-400" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="hover:text-gray-400" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Our Location</h2>
+            <div class="flex justify-center">
+                <iframe class="w-full h-64 rounded-lg shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d78.6569!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f1b1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sBengali%20Square%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>         
+               </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Book Sewa. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a class="hover:text-gray-400" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="hover:text-gray-400" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="hover:text-gray-400" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="hover:text-gray-400" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
